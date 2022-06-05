@@ -67,11 +67,14 @@ text-decoration: none;
 }
 
 /* Header */
+.header {
+    border: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
 .header-container {
     display: flex;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .header-list {
@@ -120,10 +123,13 @@ color: var(--text-color);
 /* Main*/
 .main-section-container {
     display: flex;
-    padding-top: 200px;
-    padding-bottom: 200px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.main-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .main-headerline {
@@ -158,7 +164,7 @@ cursor: pointer;
 }
 
 /* Concepts */
-.concepts-container {
+.concepts {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -202,7 +208,7 @@ color: var(--headline-text-color);
 }
 
 /* Works */
-.work-container {
+.section-work {
     padding-bottom: 94px;
 }
 
@@ -220,7 +226,7 @@ color: var(--headline-text-color);
 }
 
 /* Team */
-.team-container {
+.team {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -233,6 +239,10 @@ color: var(--headline-text-color);
 .team-member {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.team-member p+p {
+    margin-top: 10px;
 }
 
 .team {
@@ -262,13 +272,21 @@ color: var(--headline-text-color);
 }
 
 /* Footer */
-.footer-container {
+.footer {
     padding-bottom: 60px;
     padding-top: 60px;
 }
 
 .footer, .main-section {
     background: #2F303A;
+}
+
+.footer-address-list > li {
+    margin-top: 20px;
+}
+
+.footer-address-list li+li {
+    margin-top: 9px;
 }
 
 .footer-contacts-link {
@@ -293,7 +311,7 @@ color: var(--secondary-color);
 }
 
 /* Portfolio page */
-.portfolio-container {
+.main-portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
 }
